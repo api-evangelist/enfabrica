@@ -1,8 +1,24 @@
 aid: enfabrica
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/enfabrica.png
 name: Enfabrica
-description: 'Enfabrica is a company surfaced as a portfolio company of spark-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: semiconductors. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Enfabrica is a semiconductor company building networking silicon and systems for large-scale
+  AI and accelerated-computing infrastructure. Its ACF-S ("Accelerated Compute Fabric") SuperNIC targets
+  maximum throughput with fault-tolerant, multipath connectivity across AI clusters, and its EMFASYS elastic
+  memory fabric system provides memory offload for AI inference workloads. Enfabrica is backed by Spark
+  Capital. The company publishes a technical blog and company news, but does not currently expose a public
+  developer API, SDK, or developer portal, so this profile carries company identity and domain-security
+  signals rather than API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/enfabrica/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Semiconductors
+- AI Infrastructure
+- Networking
+- Hardware
+- SuperNIC
+- Memory Fabric
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/enfabrica-domain-security.yml
 - type: Website
   url: https://enfabrica.net
+- type: Blog
+  url: https://blog.enfabrica.net
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
